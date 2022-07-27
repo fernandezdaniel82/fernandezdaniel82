@@ -1,0 +1,148 @@
+10:24:02,278  INFO [      main] CTSConfigHandlerImpl -       Warning: Couldn't Find CTSConfigHeader Element for: C:\Apps\DOCUME~1\CTS\config\TGService.xml, therefore it must not be a service configuration file and will be ignored by the service manager.
+10:24:03,332  INFO [      main] CTSWebServerHandlerImpl -        Adding configuration for CTS WebService: HomeDir=C:\Apps\DOCUME~1\CTS\jetty
+10:24:03,332  INFO [      main] CTSWebServerHandlerImpl -        Adding configuration for CTS WebService: ConfigurationFile=C:\Apps\DOCUME~1\CTS\jetty\etc\jetty.xml
+10:24:03,332  INFO [      main] CTSWebServerHandlerImpl -        Adding configuration for CTS WebService: DebugLogging=true
+10:24:03,332  INFO [      main] CTSWebServerHandlerImpl -        Adding configuration for CTS WebService: Cache=C:\Apps\DOCUME~1\CTS\cache
+10:24:03,332  INFO [      main] CTSWebServerHandlerImpl -        Adding configuration for CTS WebService: processLocalContentOnly=false
+10:24:03,332  INFO [      main] CTSWebServerHandlerImpl -        Adding configuration for CTS WebService: maxWorkingThreads=10
+10:24:03,332  INFO [      main] CTSWebServerHandlerImpl -        Adding configuration for CTS WebService: thresholdForSignOff=10
+10:24:03,332  INFO [      main] CTSWebServerHandlerImpl -        Adding configuration for CTS WebService: TPMMonitorMaxTaskJobTime=90
+10:24:03,332  INFO [      main] CTSWebServerHandlerImpl -        Adding configuration for CTS WebService: TPMMonitorSleepTime=30
+10:24:03,332  INFO [      main] CTSWebServerHandlerImpl -        Adding configuration for CTS WebService: TPMForceJvmExit=10
+10:24:03,474  INFO [      main] CTSWebServerHandlerImpl -       Successfully Started Jetty Web Server Component
+10:24:03,505  INFO [      main] CTSBOCSUtils -       setAcsTransferPreferences: repository=null, allowBocsTransfer=true, preferAcsTransfer=true, allowSurrogateTransfer=true
+10:24:03,505  INFO [      main] CTSBOCSUtils -        bocsOnly is : [false] for repository: null
+10:24:03,505  INFO [      main] CTSBOCSUtils -       setAcsTransferPreferences: repository=Lpa, allowBocsTransfer=true, preferAcsTransfer=true, allowSurrogateTransfer=true
+10:24:03,505  INFO [      main] CTSBOCSUtils -        bocsOnly is : [false] for repository: Lpa
+10:24:03,505  INFO [      main] CTSBOCSUtils -       setAcsTransferPreferences: repository=Lpa, allowBocsTransfer=true, preferAcsTransfer=true, allowSurrogateTransfer=true
+10:24:03,505  INFO [      main] CTSBOCSUtils -        bocsOnly is : [false] for repository: Lpa
+10:24:03,505  INFO [      main] CTSServerHandlerImpl -       *************** Content Transformation  6.7 - Release Build 2000.0042 ICTSService Framework startup initiated. ***************
+10:24:03,600  INFO [      main] CTSPluginHandlerImpl -       Unable to instantiate the following MP: com.documentum.cts.plugin.excel.ExcelPlugin
+java.lang.UnsatisfiedLinkError: C:\Apps\Documentum\CTS\lib\JNI_Distiller_MP.dll: Can't load AMD 64-bit .dll on a IA 32-bit platform
+	at java.lang.ClassLoader$NativeLibrary.load(Native Method)
+	at java.lang.ClassLoader.loadLibrary0(ClassLoader.java:1807)
+	at java.lang.ClassLoader.loadLibrary(ClassLoader.java:1732)
+	at java.lang.Runtime.loadLibrary0(Runtime.java:823)
+	at java.lang.System.loadLibrary(System.java:1028)
+	at com.documentum.cts.plugin.distiller.DistillerPlugin.<clinit>(DistillerPlugin.java:102)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:169)
+	at com.documentum.cts.impl.services.ctsplugin.CTSPluginHandlerImpl.instantiateMPs(CTSPluginHandlerImpl.java:4128)
+	at com.documentum.cts.impl.services.ctsplugin.CTSPluginHandlerImpl.start(CTSPluginHandlerImpl.java:3946)
+	at com.documentum.cts.impl.services.CTSServiceBaseImpl.startAll(CTSServiceBaseImpl.java:922)
+	at com.documentum.cts.impl.services.CTSServiceBaseImpl.start(CTSServiceBaseImpl.java:565)
+	at com.documentum.cts.services.CTSServiceManager.getServiceBySubType(CTSServiceManager.java:533)
+	at com.documentum.cts.impl.services.ctsserver.CTSServerHandlerImpl.getMediaPluginHandler(CTSServerHandlerImpl.java:1402)
+	at com.documentum.cts.impl.services.ctsserver.CTSServerHandlerImpl.start(CTSServerHandlerImpl.java:664)
+	at com.documentum.cts.impl.services.CTSServiceBaseImpl.startAll(CTSServiceBaseImpl.java:922)
+	at com.documentum.cts.impl.services.CTSServiceBaseImpl.start(CTSServiceBaseImpl.java:565)
+	at com.documentum.cts.services.CTSServiceManager.registerServices(CTSServiceManager.java:262)
+	at com.documentum.cts.services.CTSServiceManager.bootstrapServiceFramework(CTSServiceManager.java:161)
+	at com.documentum.cts.services.CTSServiceManager.getInstance(CTSServiceManager.java:116)
+	at com.documentum.cts.services.ctsserver.CTSServerStartup.main(CTSServerStartup.java:133)
+10:24:03,600  INFO [      main] CTSPluginHandlerImpl -       Unable to instantiate the following MP: com.documentum.cts.plugin.word.WordPlugin
+java.lang.NoClassDefFoundError: com.documentum.cts.plugin.distiller.OfficePlugin
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:169)
+	at com.documentum.cts.impl.services.ctsplugin.CTSPluginHandlerImpl.instantiateMPs(CTSPluginHandlerImpl.java:4128)
+	at com.documentum.cts.impl.services.ctsplugin.CTSPluginHandlerImpl.start(CTSPluginHandlerImpl.java:3946)
+	at com.documentum.cts.impl.services.CTSServiceBaseImpl.startAll(CTSServiceBaseImpl.java:922)
+	at com.documentum.cts.impl.services.CTSServiceBaseImpl.start(CTSServiceBaseImpl.java:565)
+	at com.documentum.cts.services.CTSServiceManager.getServiceBySubType(CTSServiceManager.java:533)
+	at com.documentum.cts.impl.services.ctsserver.CTSServerHandlerImpl.getMediaPluginHandler(CTSServerHandlerImpl.java:1402)
+	at com.documentum.cts.impl.services.ctsserver.CTSServerHandlerImpl.start(CTSServerHandlerImpl.java:664)
+	at com.documentum.cts.impl.services.CTSServiceBaseImpl.startAll(CTSServiceBaseImpl.java:922)
+	at com.documentum.cts.impl.services.CTSServiceBaseImpl.start(CTSServiceBaseImpl.java:565)
+	at com.documentum.cts.services.CTSServiceManager.registerServices(CTSServiceManager.java:262)
+	at com.documentum.cts.services.CTSServiceManager.bootstrapServiceFramework(CTSServiceManager.java:161)
+	at com.documentum.cts.services.CTSServiceManager.getInstance(CTSServiceManager.java:116)
+	at com.documentum.cts.services.ctsserver.CTSServerStartup.main(CTSServerStartup.java:133)
+10:24:03,600  INFO [      main] CTSPluginHandlerImpl -       Unable to instantiate the following MP: com.documentum.cts.plugin.powerpoint.PowerPointPlugin
+java.lang.NoClassDefFoundError: com.documentum.cts.plugin.distiller.OfficePlugin
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:169)
+	at com.documentum.cts.impl.services.ctsplugin.CTSPluginHandlerImpl.instantiateMPs(CTSPluginHandlerImpl.java:4128)
+	at com.documentum.cts.impl.services.ctsplugin.CTSPluginHandlerImpl.start(CTSPluginHandlerImpl.java:3946)
+	at com.documentum.cts.impl.services.CTSServiceBaseImpl.startAll(CTSServiceBaseImpl.java:922)
+	at com.documentum.cts.impl.services.CTSServiceBaseImpl.start(CTSServiceBaseImpl.java:565)
+	at com.documentum.cts.services.CTSServiceManager.getServiceBySubType(CTSServiceManager.java:533)
+	at com.documentum.cts.impl.services.ctsserver.CTSServerHandlerImpl.getMediaPluginHandler(CTSServerHandlerImpl.java:1402)
+	at com.documentum.cts.impl.services.ctsserver.CTSServerHandlerImpl.start(CTSServerHandlerImpl.java:664)
+	at com.documentum.cts.impl.services.CTSServiceBaseImpl.startAll(CTSServiceBaseImpl.java:922)
+	at com.documentum.cts.impl.services.CTSServiceBaseImpl.start(CTSServiceBaseImpl.java:565)
+	at com.documentum.cts.services.CTSServiceManager.registerServices(CTSServiceManager.java:262)
+	at com.documentum.cts.services.CTSServiceManager.bootstrapServiceFramework(CTSServiceManager.java:161)
+	at com.documentum.cts.services.CTSServiceManager.getInstance(CTSServiceManager.java:116)
+	at com.documentum.cts.services.ctsserver.CTSServerStartup.main(CTSServerStartup.java:133)
+10:24:03,616  INFO [      main] CTSPluginHandlerImpl -       Loading the config file : C:\Apps\DOCUME~1\CTS\config\pdf\pdf.xml
+10:24:03,616  INFO [      main] CTSPluginHandlerImpl -       Unable to instantiate the following MP: com.documentum.cts.plugin.advancedpdf.AdvancedPDFPlugin
+java.lang.UnsatisfiedLinkError: no JNI_WindowsService.x64 in java.library.path
+	at java.lang.ClassLoader.loadLibrary(ClassLoader.java:1738)
+	at java.lang.Runtime.loadLibrary0(Runtime.java:823)
+	at java.lang.System.loadLibrary(System.java:1028)
+	at com.documentum.cts.util.CTSWindowsServiceUtils.<clinit>(CTSWindowsServiceUtils.java:124)
+	at com.documentum.cts.plugin.advancedpdf.AdvancedPDFPlugin.loadConfiguration(AdvancedPDFPlugin.java:110)
+	at com.documentum.cts.impl.services.ctsplugin.CTSPluginHandlerImpl.instantiateMPs(CTSPluginHandlerImpl.java:4145)
+	at com.documentum.cts.impl.services.ctsplugin.CTSPluginHandlerImpl.start(CTSPluginHandlerImpl.java:3946)
+	at com.documentum.cts.impl.services.CTSServiceBaseImpl.startAll(CTSServiceBaseImpl.java:922)
+	at com.documentum.cts.impl.services.CTSServiceBaseImpl.start(CTSServiceBaseImpl.java:565)
+	at com.documentum.cts.services.CTSServiceManager.getServiceBySubType(CTSServiceManager.java:533)
+	at com.documentum.cts.impl.services.ctsserver.CTSServerHandlerImpl.getMediaPluginHandler(CTSServerHandlerImpl.java:1402)
+	at com.documentum.cts.impl.services.ctsserver.CTSServerHandlerImpl.start(CTSServerHandlerImpl.java:664)
+	at com.documentum.cts.impl.services.CTSServiceBaseImpl.startAll(CTSServiceBaseImpl.java:922)
+	at com.documentum.cts.impl.services.CTSServiceBaseImpl.start(CTSServiceBaseImpl.java:565)
+	at com.documentum.cts.services.CTSServiceManager.registerServices(CTSServiceManager.java:262)
+	at com.documentum.cts.services.CTSServiceManager.bootstrapServiceFramework(CTSServiceManager.java:161)
+	at com.documentum.cts.services.CTSServiceManager.getInstance(CTSServiceManager.java:116)
+	at com.documentum.cts.services.ctsserver.CTSServerStartup.main(CTSServerStartup.java:133)
+10:24:04,481  INFO [ Thread-34] CTSProfileManagerImpl -       Checking dm_format.format_class for repository Lpa
+10:24:04,529  INFO [      main] CTSServerStartup -       *************** Content Transformation Services 6.7 - Release Build 2000.0042 ICTSService Framework startup completed. ***************
+10:24:05,064  INFO [ Thread-34] CTSProfileManagerImpl -       Successfully checked Media Server Folders
+10:24:08,842  INFO [ Thread-34] CTSProfileManagerImpl -       Successfully updated the profile cache for : register
+10:24:09,188  INFO [ Thread-34] CTSBOCSUtils -       getLocalNetLocId: The local network location ID is NOT available for DTS-Aso
+10:24:09,188  INFO [ Thread-34] CTSBOCSUtils -       isBocsOrAcsTransferEnabled - false for Lpa
+10:24:09,865  INFO [ Thread-34] CTSProfileManagerImpl -       Successfully updated the profile cache for : pdf_to_pdfText_dts
+10:24:10,290  INFO [ Thread-34] CTSProfileManagerImpl -       Successfully updated the profile cache for : pdf_to_linearizedPDF_dts
+10:24:10,904  INFO [ Thread-34] CTSProfileManagerImpl -       Successfully updated the profile cache for : document_to_ps
+10:24:11,439  INFO [ Thread-34] CTSProfileManagerImpl -       Successfully updated the profile cache for : document_to_pdf
+10:24:11,848  INFO [ Thread-34] CTSProfileManagerImpl -       Successfully updated the profile cache for : embedPDFMetadata_dts
+10:24:12,037  INFO [ Thread-34] CTSProfileManagerImpl -       Successfully updated the profile cache for : document_to_pdf_via_ps
+10:24:12,179  INFO [ Thread-34] CTSProfileManagerImpl -       Successfully updated the profile cache for : legacy_to_html
+10:24:12,352  INFO [ Thread-34] CTSProfileManagerImpl -       Successfully updated the profile cache for : legacy_to_pdf
+10:24:12,966  INFO [ Thread-34] CTSProfileManagerImpl -       Successfully updated the profile cache for : document_to_html
+10:24:12,966  INFO [ Thread-34] CTSProfileManagerImpl -       Going to update all the Child and Sequence Profiles 
+10:24:12,966  INFO [ Thread-34] CTSProfileManagerImpl -       Updating the profile : register
+10:24:12,998  INFO [ Thread-34] CTSProfileManagerImpl -       Inner profile : /System/Media Server/System Profiles/document_to_pdf
+10:24:12,998  INFO [ Thread-34] CTSProfileManagerImpl -       Updating the profile : document_to_pdf_via_ps
+10:24:12,998  INFO [ Thread-34] CTSProfileManagerImpl -       Inner profile : /System/Media Server/System Profiles/document_to_ps
+10:24:12,998  INFO [ Thread-34] CTSProfileManagerImpl -       Inner profile : /System/Media Server/System Profiles/document_to_pdf
+10:24:12,998  INFO [ Thread-34] CTSProfileManagerImpl -       Updating the profile : legacy_to_html
+10:24:12,998  INFO [ Thread-34] CTSProfileManagerImpl -       Inner profile : /System/Media Server/System Profiles/document_to_html
+10:24:12,998  INFO [ Thread-34] CTSProfileManagerImpl -       Updating the profile : legacy_to_pdf
+10:24:12,998  INFO [ Thread-34] CTSProfileManagerImpl -       Inner profile : /System/Media Server/System Profiles/document_to_pdf
+10:24:13,013  INFO [ Thread-34] CTSProfileManagerImpl -       Updating canExecute info cache... This is a one time process 
+10:24:13,360  INFO [ Thread-34] CTSProfileManagerImpl -       successfully updated canExecute info cache...
+10:24:13,375  INFO [ Thread-34] CTSQueueProcessor -       maxQueueItemsToSignoff: 10, thresholdForQueueItemsToSignOff: 10
+10:24:13,501  INFO [ Thread-34] CTSThreadPoolManagerImpl -       ASM is NOT configured for repository Lpa
+10:24:13,501  INFO [ Thread-34] CTSThreadPoolManagerImpl -       Number of ICTSTask Threads Created: 1
+10:24:13,501  INFO [ Thread-40] CTSThreadPoolManagerImpl -       Start. About to get Next ICTSTask from pool manager...
+10:24:13,501  INFO [ Thread-40] CTSThreadPoolManagerImpl -       ICTSThreadPoolManager: removing first item from the list for processing... 
+10:24:13,501  INFO [ Thread-40] CTSThreadPoolManagerImpl -       Removing a task to execute it. Number in waiting list: 1
+10:24:13,501  INFO [ Thread-40] CTSThreadPoolManagerImpl -       Next CTSTask received...
+10:24:13,501  INFO [ Thread-40] CTSThreadPoolManagerImpl -       CTSThreadPoolManager has threadlimit 1
+10:24:13,501  INFO [ Thread-40] CTSThreadPoolManagerImpl -       Processing next CTSTask...
+10:24:13,501  INFO [ Thread-40] CTSThreadPoolManagerImpl -       About to get notifier from CTSTask...
+10:24:13,501  INFO [ Thread-40] CTSThreadPoolManagerImpl -       About to get session from CTSTask...
+10:24:13,501  INFO [ Thread-40] CTSThreadPoolManagerImpl -       About to get RUN CTSTask...
+10:24:13,863  INFO [ Thread-34] CTSLegacyQueueProcessor -       maxQueueItemsToSignoff: 10, thresholdForQueueItemsToSignOff: 10
+10:24:13,879  INFO [ Thread-34] CTSThreadPoolManagerImpl -       Number of ICTSTask Threads Created: 1
+10:24:13,879  INFO [ Thread-44] CTSThreadPoolManagerImpl -       Start. About to get Next ICTSTask from pool manager...
+10:24:13,879  INFO [ Thread-44] CTSThreadPoolManagerImpl -       ICTSThreadPoolManager: removing first item from the list for processing... 
+10:24:13,879  INFO [ Thread-44] CTSThreadPoolManagerImpl -       Removing a task to execute it. Number in waiting list: 1
+10:24:13,879  INFO [ Thread-44] CTSThreadPoolManagerImpl -       Next CTSTask received...
+10:24:13,879  INFO [ Thread-44] CTSThreadPoolManagerImpl -       CTSThreadPoolManager has threadlimit 1
+10:24:13,879  INFO [ Thread-44] CTSThreadPoolManagerImpl -       Processing next CTSTask...
+10:24:13,879  INFO [ Thread-44] CTSThreadPoolManagerImpl -       About to get notifier from CTSTask...
+10:24:13,879  INFO [ Thread-44] CTSThreadPoolManagerImpl -       About to get session from CTSTask...
+10:24:13,879  INFO [ Thread-44] CTSThreadPoolManagerImpl -       About to get RUN CTSTask...
+10:24:14,005  INFO [ Thread-34] CTSInstanceInfoUtils -       Product DTS version 6.7.2000.0042 is installed on repository: Lpa
